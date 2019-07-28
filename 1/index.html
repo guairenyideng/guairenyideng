@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>密码随机生成</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery2-1-1.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="mousehold.js"></script>
+
+</head>
+<body>
+<a href=https://369958.xyz target=_blank>https://369958.xyz</a>
+<div id="container">
+  <section id="content">
+	  <article id="pswcampbox">
+		  <div id="pswcamp">
+			  <span contenteditable="false">密码</span>
+			  <div id="generate">确定</div>
+		  </div>
+	  </article>
+	  <article id="options">
+		  <div class="option" desc="填写数字" id="number">
+			 <div class="less">-</div>
+			 <div class="value" contenteditable="true" id="numDigits">10</div>
+			 <div class="more">+</div>
+		  </div>
+		  <div class="option active" id="upperCase" desc="大写字母"><span>A</span></div>
+		  <div class="option active" id="lowerCase" desc="小写字母"><span>a</span></div>
+		  <div class="option active" id="numbers" desc="数字"><span>3</span></div>
+		  <div class="option active" id="symbols" desc="符号"><span>@</span><span id="symbolOptions">v</span></div>
+		  <div class="option active" id="similarChars" desc="避免类似的字符 (1, l, i, 0, o..)"><span>o0</span></div>
+	  </article>
+	  <aside>
+		<div id="symbolsSelectorContainer">
+		  <div id="symbolsSelector">
+			<div id="maxSymbolsNumberBox">
+			  <div id="maxSymbolsNumber">
+				<span class="resta">-</span>
+				<span class="maxSymbolValue" contenteditable="true">2</span>
+				<span class="suma">+</span>
+			  </div>
+			  <span>Max. number of symbols:</span>
+			</div>
+		  </div>
+		</div>
+	  </aside>
+  </section>
+  <aside>
+	  <p id="option-desc"></p>
+  </aside>
+</div>
+<script type="text/javascript">
+var	wh = $(window).height();
+var	ch = $(".content").height();
+$(".content").css("margin-top", (wh-ch)/2);
+</script>
+</body>
+</html>
+
