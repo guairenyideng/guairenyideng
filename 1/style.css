@@ -1,0 +1,320 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-color: #6cc1ed;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+#content {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    margin-bottom: 15px;
+}
+
+#pswcampbox {
+    margin: 5px auto 15px auto;
+    width: 97%;
+    height: 60px;
+    color: #888;
+}
+
+#pswcampbox #pswcamp {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px 0 10px;
+    text-align: center;
+    float: left;
+    background-color: #fff;
+}
+
+#pswcampbox #pswcamp span {
+    outline: none;
+    -webkit-outline: none;
+}
+
+.option {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 31.3%;
+    height: 50px;
+    float: left;
+    margin-left: 1.5%;
+    margin-bottom: 5px;
+    background-color: rgba(235, 235, 235, .4);
+    border: 1px solid rgba(255, 255, 255, .6);
+    cursor: pointer;
+    transition: background-color ease-in-out .15s;
+    -webkit-transition: background-color ease-in-out .15s;
+    -moz-transition: background-color ease-in-out .15s;
+    -o-transition: background-color ease-in-out .15s;
+    text-align: center;
+    line-height: 50px;
+    color: rgba(0, 0, 0, .3);
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+.option:hover {
+    background-color: rgba(235, 235, 235, .6);
+}
+
+.option.active {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, .7);
+}
+
+#number.active {
+    background-color: rgba(235, 235, 235, .4);
+}
+
+#options .option .less, #options .option .more, #generate {
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+#options .option .value {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    height: 100%;
+    width: 40%;
+    float: left;
+    background-color: #fff;
+    color: #888;
+    outline: none;
+    -webkit-outline: none;
+}
+
+#options .option .less, #options .option .more {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    height: 100%;
+    width: 30%;
+    float: left;
+    font-size: 25px;
+    color: #ccc;
+    background-color: #f1f1f1;
+}
+
+#options .option .less {
+    border-right: 1px solid #ddd;
+}
+
+#options .option .more {
+    border-left: 1px solid #ddd;
+}
+
+.option #symbolOptions {
+    float: right;
+    height: 100%;
+    width: 15px;
+    color: #ccc;
+    border-left: 1px dashed #ddd;
+    background-color: #fafafa;
+}
+
+#symbolsSelectorContainer {
+    float: left; 
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+#symbolsSelector {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    border: 1px dashed #6cc1ed;
+    margin-top: 10px;
+}
+
+#symbolsSelector #maxSymbolsNumberBox {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+#symbolsSelector #maxSymbolsNumberBox span {
+    float: right;
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+}
+
+#symbolsSelector #maxSymbolsNumberBox #maxSymbolsNumber {
+    width: 120px;
+    height: 100%;
+    float: right;
+    margin-right: 4px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+#symbolsSelector #maxSymbolsNumberBox #maxSymbolsNumber span {
+    float: left;
+    text-align: center;
+    line-height: 35px;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none;
+    cursor: pointer;
+}
+
+#symbolsSelector #maxSymbolsNumberBox #maxSymbolsNumber span.suma, #symbolsSelector #maxSymbolsNumberBox #maxSymbolsNumber span.resta {
+    width: 35px;
+    background-color: #f1f1f1;
+    color: #ccc;
+    font-size: 25px;
+}
+
+#symbolsSelector #maxSymbolsNumberBox #maxSymbolsNumber span.suma {
+    border-left: 1px solid #ddd;
+}
+
+#symbolsSelector #maxSymbolsNumberBox #maxSymbolsNumber span.resta {
+    border-right: 1px solid #ddd;
+}
+
+#symbolsSelector #maxSymbolsNumberBox #maxSymbolsNumber span.maxSymbolValue {
+    width: 48px;
+    color: #888;
+}
+
+#symbolsSelector #symbolBox {
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, .3);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #666;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+#symbolsSelector #symbolBox.selected {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+#symbolsSelector #repeatSymbolsBox {
+    width: 100%;
+    height: 35px;
+    float: left;
+}
+
+#symbolsSelector #repeatSymbols {
+    width: auto;
+    height: 35px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#symbolsSelector #repeatSymbols span {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+#symbolsSelector #repeatSymbols #checkBox {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+#symbolsSelector #repeatSymbols #checkBox div {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#symbolsSelector #repeatSymbols #checkBox div.checked {
+    background-color: #fff;
+}
+
+#pswcamp #generate {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-top: 20px;
+    width: 60px;
+    height: 60px;
+    float: right;
+    background-color: #ACFA58;
+    color: #fff;
+    margin-right: -10px;
+    margin-top: -20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+p#option-desc {
+    width: 100%;
+    text-align: center;
+    color: #555;
+    text-shadow: 0 1px 1px rgba(235, 235, 235, .3);
+}
