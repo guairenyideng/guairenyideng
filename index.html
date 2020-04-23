@@ -1,137 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>369958.XYZ意思是神啊救救我吧！</title>
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<title>369958.XYZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="encrypt.js"></script>
 </head>
-
 <body>
-<div class="container" id="container">
-<aside class="left-bar" id="leftBar">
-<div class="title">
-<p>369958.XYZ</p>
-</div>
-<nav class="nav">
-<div class="item active"><i class=""></i>意思是神啊救救我吧！<i class="line"></i></div>
-<ul class="nav-item" id="navItem">
-<li><a href="#1" class="active"><i class=""></i>369958.XYZ</a></li>
-<li><a href="#2" class=""><i class=""></i>微信公众号：怪人一等</a></li>
-<li><a href="#3"><i class=""></i>今日头条号：怪人一等</a></li>
-<li><a href="#4"><i class=""></i>抖音</a></li>
-<li><a href="#5"><i class=""></i>淘宝</a></li>
-<li><a href="#6"><i class=""></i>微信号：guairenyideng</a></li>
-
-
-</ul>
-<div class="item comment"><i class=""></i></a></div>
-</nav>
-</aside>
-
-<section class="main">
-<div id="mainContent">
-
-
-<div class="box">
-<a href="#" name="1"></a>
-<div class="sub-category">
-<div><i class="iconfont icon-shequ"></i>369958.XYZ</div>
-</div>
-<div>
-<div class="item"><div class="">汉字转拼音</div></div>
-<a href=/yun><div class="item"><div class="">蓝天白云</div></div></a>
-</div></div>
-
-<div class="box">
-<a href="#" name="2"></a>
-<div class="sub-category">
-<div><i class="iconfont icon-shequ"></i>微信公众号：怪人一等</div>
-</div>
-<div>
-<div class="item"><div class="">写诗</div></div>
-<div class="item"><div class="">作曲</div></div>
-</div></div>
-
-<div class="box">
-<a href="#" name="3"></a>
-<div class="sub-category">
-<div><i class=""></i>今日头条号：怪人一等</div>
-</div>
-<div>
-<div class="item"><div class="">写诗</div></div>
-<div class="item"><div class="">HTML源码</div></div>
-</div></div>
-
-<div class="box">
-<a href="#" name="4"></a>
-<div class="sub-category">
-<div><i class=""></i>抖音</div>
-</div>
-<div>
-<div class="item"><div class="">粤语读诗</div></div>
-<div class="item"><div class="">音痴点歌台</div></div>
-<div class="item"><div class="">今日一句话</div></div>
-</div></div>
-
-<div class="box">
-<a href="#" name="5"></a>
-<div class="sub-category">
-<div><i class=""></i>淘宝</div>
-</div>
-<div>
-<div class="item"><div class="">一元惊喜福袋</div></div>
-</div></div>
-
-<div class="box">
-<a href="#" name="6"></a>
-<div class="sub-category">
-<div><i class=""></i>微信号：guairenyideng</div>
-</div>
-<div>
-<div class="item"><div class="">浏览关注点赞任务代放</div></div>
-<div class="item"><div class="">王者开坑</div></div>
-<div class="item"><div class="">处基友</div></div>
-</div></div>
-
-<footer class="footer">
-<div class="copyright">
-<div>
-</div>
-</div>
-</footer>
-</section>
-<script>
-var oMenu = document.getElementById('menu');
-var oBtn = oMenu.getElementsByTagName('a')[0];
-var oLeftBar = document.getElementById('leftBar');
-oBtn.onclick = function() {
-if (oLeftBar.offsetLeft == 0) {
-oLeftBar.style.left = -249 + 'px';
-} else {
-oLeftBar.style.left = 0 + 'px';
-}
-if (document.documentElement.clientWidth <= 481) {
-document.onclick = function() {
-if (oLeftBar.offsetLeft == 0) {
-console.log(123);
-oLeftBar.style.left = -249 + 'px';
-}
-}
-}
-}
-
-var oNavItem = document.getElementById('navItem');
-var aA = oNavItem.getElementsByTagName('a');
-for(var i=0; i<aA.length; i++) {
-aA[i].onclick = function() {
-for(var j=0; j<aA.length; j++) {
-aA[j].className = '';
-}
-this.className = 'active';
-}
-}
-</script>
+    
+    <div class="center top-relative">
+        <div class="content voilet1">
+            <span>*请输入加密/解密密码：（越复杂效果越好，支持中文，切勿忘记）</span>
+            <input class="f15pt" type="password" id="passcode" placeholder="密码" />
+        </div>
+        <div class="content voilet2">
+            <span>请输入要加密/解密的内容：</span>
+            <textarea id="originalContent"></textarea>
+        </div>
+        <div class="content voilet0">
+            <span>加密后内容：</span>
+            <textarea id="encryptedContent" readonly></textarea>
+        </div>
+        <div class="content voilet0">
+            <span>解密后内容：</span>
+            <textarea id="decryptedContent" readonly></textarea>
+        </div>
+        <button class="encrypt" onclick="webdevencrypt.setEncrypt('originalContent','encryptedContent','passcode')">加密</button>
+        <button class="encrypt" onclick="webdevencrypt.setDecrypt('originalContent','decryptedContent','passcode')">解密</button>
+    </div>
 </body>
-
+ 
 </html>
