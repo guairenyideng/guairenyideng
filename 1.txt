@@ -1,3 +1,5 @@
+
 <a href ="http://zh.369958.xyz" target="_blank">ZH</a>
 <a href ="http://en.369958.xyz" target="_blank">EN</a>
+<a href ="http://ru.369958.xyz" target="_blank">RU</a>
 <a href ="http://jp.369958.xyz" target="_blank">JP</a>
